@@ -5,7 +5,8 @@ from scipy.io import savemat
 
 # replace filename depending on dataset
 txt_files = []
-f = open("list_yolocats")
+f = open("list_inetcats")
+#f = open("list_yolocats")
 for i in f:
     txt_files.append(i[:-1])
 f.close()
@@ -36,7 +37,7 @@ print("Embedding array shape:", word_vectors.shape)
 print("Example word:", vocab[0], "→ Vector:", word_vectors[0])
 
 # replace filename depending on dataset
-savemat("../../word_vectors_yolo.mat", {
-    "vocab": vocab,          # Vocabulary (list of words)
-    "word_vectors": word_vectors  # Embedding matrix
+savemat("../../word_vectors_imagenet.mat", {
+    #"vocab": vocab,          # Vocabulary 
+    "feats": word_vectors  # Embedding matrix (called 'feats' to play nice with existinc code)
 })
