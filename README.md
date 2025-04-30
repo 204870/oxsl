@@ -7,4 +7,4 @@ uses the flicker8k and flicker30k datasets from kaggle
 
 heavily inspired by [this paper](https://aclanthology.org/2014.tal-3.3.pdf) and its [source code](https://github.com/kadarakos/IBMVisual)
 
-uses benchmarks found [here](https://bitbucket.org/kadar_akos/wordsims/src/master/)
+tested with the [wordsims3 benchmark](https://github.com/204870/wordsims3)
