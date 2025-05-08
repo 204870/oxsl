@@ -8,3 +8,10 @@ uses the [flicker8k](https://www.kaggle.com/datasets/adityajn105/flickr8k) and [
 heavily inspired by [this paper](https://aclanthology.org/2014.tal-3.3.pdf) and its [source code](https://github.com/kadarakos/IBMVisual)
 
 tested with the [wordsims3 benchmark](https://github.com/204870/wordsims3)
+
+images.txt -> flickr.py -> bash to list_inetcats and list_yolocats and vectorize.py for each to get vectors
+
+
+python3 train.py vector online f8k train test
+source venv/bin/activate
+
