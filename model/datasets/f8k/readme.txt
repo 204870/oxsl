@@ -1,2 +1,6 @@
-place the flickr8k folder into this one
-download the raw images from kaggle and place them all into flickr8k/imgs. You only have to do this if you wish to visualize the predictions
+Download and unpack the zip from the link below.
+It should populate this directory with: dataset.json, vgg_feats.mat
+
+http://cs.stanford.edu/people/karpathy/deepimagesent/flickr8k.zip
+
+replace vgg_feats.mat with the vectors you created using vectorize.py in the preprocessing folder.
