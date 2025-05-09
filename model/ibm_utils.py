@@ -53,6 +53,7 @@ class BasicDataProvider:
 
 
   def iterImageSentencePair(self, split = 'train', max_images = -1):
+    # for the latter half of this project, i set max_images to 7500 for the sake of time and resources (i was running everything locally and my computer crashed T_T)
     for i,img in enumerate(self.split[split]):
       if max_images >= 0 and i >= max_images: break
       for sent in img['sentences']:
