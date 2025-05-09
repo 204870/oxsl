@@ -3,10 +3,11 @@ from gensim.models import Word2Vec
 import os
 from scipy.io import savemat
 
-# replace filename depending on dataset
+# replace filenames depending on dataset, keeping in mind the output file is a .mat file containing your vectors
+filename = "list_inetcats"
+output = "word_vectors_imagenet.mat"
 txt_files = []
-f = open("list_inetcats")
-#f = open("list_yolocats")
+f = open(file)
 for i in f:
     txt_files.append(i[:-1])
 f.close()
@@ -36,8 +37,7 @@ word_vectors = model.wv.vectors  # Numpy array (shape: [vocab_size, vector_size]
 print("Embedding array shape:", word_vectors.shape)
 print("Example word:", vocab[0], "→ Vector:", word_vectors[0])
 
-# replace filename depending on dataset
-savemat("../../word_vectors_imagenet.mat", {
+savemat(output, {
     #"vocab": vocab,          # Vocabulary 
     "feats": word_vectors  # Embedding matrix (called 'feats' to play nice with existinc code)
 })
