@@ -1,4 +1,4 @@
-# Yet Another Model for Cross Situational Word Learning
+# Yet Another Model for Cross Situational Learning
 Project for APLN 552: Computational Cognitive Modeling of Language
 
 Cross Situational word learning model, that learns word meaning through vector semantics and object detection
