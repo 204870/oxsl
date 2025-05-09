@@ -1,0 +1,9 @@
+cv2
+gensim
+matplotlib
+numpy
+pandas
+PIL
+pytorch
+scipy
+torchvision
